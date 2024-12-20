@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD041 -->
+
 ![Logo!](assets/logo.png)
 
 # Native Network documentation
