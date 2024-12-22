@@ -193,3 +193,5 @@ You don't need to do anything if you are using our Docker image.
 NOTE: If use Cosmovisor with auto-download binaries, rather than building from source in the machine where you run your node, you have to download the respective `libwasmvm` into your machine.
 
 See [Release Compatibility Matrix](https://github.com/gonative-cc/gonative#release-compatibility-matrix).
+
+**To test if the libwasm is linked correctly, run `gonative version`.**
