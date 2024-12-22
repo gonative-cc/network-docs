@@ -39,6 +39,14 @@ After a validator is created, token holders can delegate their tokens to them, e
 
 From all validator candidates that signaled themselves, `N` (N is the limit specified by the chain consensus) validators with the most total stake are the designated validators. If a validator's total stake falls below the top `N`, then that validator loses its validator privileges. The validator cannot participate in consensus or generate rewards until the stake is high enough to be in the top `N`. Over time, the maximum number of validators may be increased via on-chain governance proposal.
 
+### How to join testnet or mainnet
+
+1. Correctly setup the validator (see "Setting up validator node" section below).
+1. Use the latest node version:
+   - [Binaries](https://github.com/gonative-cc/network-docs/releases).
+1. Join Discord and sync your node. Instructions are in the [network-info.md](./network-info.md). Make sure you are in the testnet / mainnet group.
+1. Have enough token delegation to your validator to get into the active validator set (see the section above).
+
 ### What are the different states a validator can be in?
 
 A validator is in one of the following states:
@@ -144,12 +152,44 @@ You can skip `--home` parameter if you are using the default value (~/.gonative)
 
 ## Handling chain upgrades
 
-Native includes a powerful governance proposal that allows chain ugprades. Some upgrades are state breaking and require coordinated upgrade to perform upgrade to avoid forks. Once upgrade is triggered, the chain will halt and request validator to perform an upgrade.
+Native includes a powerful governance proposal that allows chain upgrades. Some upgrades are state breaking and require coordinated upgrade to perform upgrade to avoid forks. Once upgrade is triggered, the chain will halt and request validator to perform an upgrade.
 
 See the Cosmos Hub [chain upgrades guide](https://hub.cosmos.network/main/hub-tutorials/live-upgrade-tutorial) for more details.
 
-### Automate updates with Cosmovisor
+### Automate upgrades with Cosmovisor
 
-Cosmovisor automates chain upgrades as well acts as a supervisor to keep running a chain in case of a process crash.
+Cosmovisor automates chain upgrades and acts as a supervisor to keep running a chain in case of a process crash.
+It monitors the governance module for incoming chain upgrade proposals. If it sees a proposal that gets approved, `cosmovisor` can automatically download the new binary, stop the current one, switch from the old binary to the new one, and finally restart the node with the new binary.
 
-See Cosmos Hub [Cosmovisor instructions](https://hub.cosmos.network/main/hub-tutorials/join-mainnet#cosmovisor).
+- [Docs](https://github.com/cosmos/cosmos-sdk/tree/main/tools/cosmovisor)
+- See the Cosmos Hub [guide](https://hub.cosmos.network/main/hub-tutorials/join-mainnet#cosmovisor).
+  recommended setting - [systemd service file](./system/gonative.system)
+
+Use the following commands to enable systemd service:
+
+```sh
+sudo systemctl daemon-reload
+sudo systemctl enable gonative
+sudo systemctl start gonative
+```
+
+To check logs you can use this command
+
+```sh
+journalctl -u gonative -f
+```
+
+### libwasmvm
+
+When you build the binary from source on the server machine you probably don't need any change. Building from source automatically link the `libwasmvm.$(uname -m).so` created as a part of the build process.
+
+However when you download a binary from GitHub, or from another source, make sure you have the required version of `libwasmvm.<cpu_arch>.so` (should be in your lib directory, e.g.: `/usr/local/lib/`). You can get it:
+
+- from your build machine: copy `$GOPATH/pkg/mod/github.com/!cosm!wasm/wasmvm@v<version>/internal/api/libwasmvm.$(uname -m).so`
+- or download from CosmWasm GitHub `wget https://raw.githubusercontent.com/CosmWasm/wasmvm/v<version>/internal/api/libwasmvm.$(uname -m).so -O /lib/libwasmvm.$(uname -m).so`
+
+You don't need to do anything if you are using our Docker image.
+
+NOTE: If use Cosmovisor with auto-download binaries, rather than building from source in the machine where you run your node, you have to download the respective `libwasmvm` into your machine.
+
+See [Release Compatibility Matrix](https://github.com/gonative-cc/gonative#release-compatibility-matrix).
