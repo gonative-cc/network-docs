@@ -11,4 +11,7 @@ In this repository we describe our networks and instructions how to setup a vali
 
 ## Contributing & Security
 
-Visit our [contributing](https://github.com/gonative-cc/contributig) repository.
+Before contributing to the repo:
+
+- Visit our [contributing](https://github.com/gonative-cc/contributig) repository.
+- Setup git hooks: `make setup`.
