@@ -61,7 +61,12 @@ A validator is in one of the following states:
 
 ### 1. Get Binary
 
-Download the latest binary from the [releases](https://github.com/robert-zaremba/gonative-net/releases) page and put it your bin directory (usually somewhere in you PATH, eg /usr/local/bin)
+- Download from the [releases](https://github.com/robert-zaremba/gonative/releases) page and put it your bin directory (usually somewhere in you PATH, eg /usr/local/bin)
+- [Build](https://github.com/gonative-cc/gonative/blob/master/README.md#build) yourself
+  - follow the latest [Release Notes](https://github.com/gonative-cc/gonative/blob/master/RELEASE_NOTES.md).
+- TODO: Use our released docker [gonative](https://github.com/gonative-cc/gonative/pkgs/container/gonative) container.
+
+Make sure you have correct libwasm according to the latest Release Notes or the [compatibility matrix](https://github.com/gonative-cc/gonative#release-compatibility-matrix). See about more in the [libwasm](#libwasmvm) section below.
 
 You can run `gonative version` to see if the binary is accessible and works.
 
@@ -185,7 +190,10 @@ When you build the binary from source on the server machine you probably don't n
 
 However when you download a binary from GitHub, or from another source, make sure you have the required version of `libwasmvm.<cpu_arch>.so` (should be in your lib directory, e.g.: `/usr/local/lib/`). You can get it:
 
-- from your build machine: copy `$GOPATH/pkg/mod/github.com/!cosm!wasm/wasmvm@v<version>/internal/api/libwasmvm.$(uname -m).so`
+- from your build machine: copy the libwasmvm.so file:
+  ```sh
+  scp $GOPATH/pkg/mod/github.com/!cosm!wasm/wasmvm@<version>/internal/api/libwasmvm.$(uname -m).so <remote_host>:/<lib/path>
+  ```
 - or download from CosmWasm GitHub `wget https://raw.githubusercontent.com/CosmWasm/wasmvm/v<version>/internal/api/libwasmvm.$(uname -m).so -O /lib/libwasmvm.$(uname -m).so`
 
 You don't need to do anything if you are using our Docker image.
