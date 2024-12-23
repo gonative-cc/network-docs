@@ -61,12 +61,12 @@ A validator is in one of the following states:
 
 ### 1. Get Binary
 
-- Download from the [releases](https://github.com/robert-zaremba/gonative/releases) page and put it your bin directory (usually somewhere in you PATH, eg /usr/local/bin)
+- Download from the [releases page](https://github.com/gonative-cc/gonative/releases) and put it your bin directory (usually somewhere in you PATH, eg /usr/local/bin)
 - [Build](https://github.com/gonative-cc/gonative/blob/master/README.md#build) yourself
   - follow the latest [Release Notes](https://github.com/gonative-cc/gonative/blob/master/RELEASE_NOTES.md).
 - TODO: Use our released docker [gonative](https://github.com/gonative-cc/gonative/pkgs/container/gonative) container.
 
-Make sure you have correct libwasm according to the latest Release Notes or the [compatibility matrix](https://github.com/gonative-cc/gonative#release-compatibility-matrix). See about more in the [libwasm](#libwasmvm) section below.
+Make sure you have correct libwasm according to the latest Release Notes or the [compatibility matrix](https://github.com/gonative-cc/gonative#release-compatibility-matrix). See more in the [libwasm](#libwasmvm) section below.
 
 You can run `gonative version` to see if the binary is accessible and works.
 
