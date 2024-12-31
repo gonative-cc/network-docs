@@ -186,6 +186,9 @@ journalctl -u gonative -f
 
 ### libwasmvm
 
+Currently, CosmWasm is not integrated, and libwasmvm is not needed.
+
+<!--
 When you build the binary from source on the server machine you probably don't need any change. Building from source automatically link the `libwasmvm.$(uname -m).so` created as a part of the build process.
 
 However when you download a binary from GitHub, or from another source, make sure you have the required version of `libwasmvm.<cpu_arch>.so` (should be in your lib directory, e.g.: `/usr/local/lib/`). You can get it:
@@ -203,3 +206,5 @@ NOTE: If use Cosmovisor with auto-download binaries, rather than building from s
 See [Release Compatibility Matrix](https://github.com/gonative-cc/gonative#release-compatibility-matrix).
 
 **To test if the libwasm is linked correctly, run `gonative version`.**
+
+-->
