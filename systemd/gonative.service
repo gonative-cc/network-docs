@@ -3,11 +3,12 @@ Description=gonative Daemon
 After=network-online.target
 
 [Service]
-User=$USER
+User=validator
 ExecStart=$(which cosmovisor) run start
 Restart=always
-RestartSec=3
-LimitNOFILE=4096
+RestartSec=6
+LimitNOFILE=infinity
+LimitNPROC=infinity
 Environment="DAEMON_HOME=$HOME/.gonative"
 Environment="DAEMON_NAME=gonative"
 Environment="DAEMON_ALLOW_DOWNLOAD_BINARIES=false"
