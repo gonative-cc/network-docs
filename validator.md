@@ -124,7 +124,7 @@ Once you choose your sync option, make sure you update the config (app.toml, cli
 
 ```toml
 # <chain-home-directory>/config/app.toml
-minimum-gas-prices = "0.08untiv
+minimum-gas-prices = "0.08untiv"
 ```
 
 #### Seeds & Peers
