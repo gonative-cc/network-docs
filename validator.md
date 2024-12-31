@@ -168,7 +168,7 @@ It monitors the governance module for incoming chain upgrade proposals. If it se
 
 - [Docs](https://github.com/cosmos/cosmos-sdk/tree/main/tools/cosmovisor)
 - See the Cosmos Hub [guide](https://hub.cosmos.network/main/hub-tutorials/join-mainnet#cosmovisor).
-  recommended setting - [systemd service file](./system/gonative.system)
+  recommended setting - [systemd service file](./systemd/gonative.service)
 
 Use the following commands to enable systemd service:
 
