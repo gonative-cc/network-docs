@@ -147,6 +147,10 @@ See the [network](./network-info.md) documentation for information about seeds a
 
 See Cosmos Hub [configuration documentation](https://hub.cosmos.network/main/hub-tutorials/join-mainnet#pruning-of-state) about state pruning options, REST and GRPC config.
 
+### 6. Firewall and Production tips
+
+See Cosmos SDK [running a production node docs](https://docs.cosmos.network/main/user/run-node/run-production).
+
 ## Start a node
 
 ```sh

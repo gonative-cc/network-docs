@@ -4,22 +4,20 @@
 
 ## Testnet
 
-Chain-ID: native-t1
-App gRPC: 161.35.157.54:9090
-App gRPC-gateway (JSON RPC): localhost:1317
-
-CommetBFT RPC: 161.35.157.54:26657
-CommetBFT p2p: 161.35.157.54:26656
+| --            | value               |
+| ------------- | ------------------- |
+| Chain-ID      | native-t1           |
+| App gRPC      | 161.35.157.54:9090  |
+| App JSON RPC  | localhost:1317      |
+| CommetBFT RPC | 161.35.157.54:26657 |
+| CommetBFT p2p | 161.35.157.54:26656 |
 
 Explorer : TODO
 
 ### Sync info
 
-Snapshot providers:
-
-- TODO
-
-`persistent_peers`:
+- Snapshot providers: TODO
+- `persistent_peers`: TODO
 
 ### Become validator
 
@@ -33,4 +31,4 @@ Snapshot providers:
 
 - Make sure you firstly tested your setup on Testnet.
 - Ask Discord admins to add you to the mainnet channel.
-- Buy uumee to self delegate.
+- Buy NTIV to self delegate.
