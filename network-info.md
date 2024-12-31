@@ -2,7 +2,15 @@
 
 # Network Info
 
-## Testnet
+## Testnet-1
+
+### Become a validator
+
+- Join our [Discord](https://discord.com/invite/gonative), ask moderators to get you in the testnet channel.
+- Using Discord, send to admins your validator address and valoper address and ping admins to send you testnet NTIV.
+- Once your node validator is set up (and you did self delegation), ping admins again with your valoper address. We will do a delegation.
+
+### Network
 
 | --            | value               |
 | ------------- | ------------------- |
@@ -16,18 +24,13 @@ Explorer : TODO
 
 ### Sync info
 
+- [genesis-testnet-1.json.gz](./genesis/genesis-testnet-1.json.gz)
 - Snapshot providers: TODO
 - `persistent_peers`: TODO
 
-### Become validator
-
-- Join our [Discord](https://discord.com/invite/gonative), ask moderators to get you in the testnet channel.
-- Using Discord, ping admins to send you testnet NTIV.
-- Once your node validator is set up (and you did self delegation), ping again admins with your validator address. We will do a delegation.
-
 ## Mainnet
 
-### Become validator
+### Become a validator
 
 - Make sure you firstly tested your setup on Testnet.
 - Ask Discord admins to add you to the mainnet channel.
