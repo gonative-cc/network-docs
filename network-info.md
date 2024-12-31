@@ -4,10 +4,13 @@
 
 ## Testnet
 
-Chain-ID : gonative-t1
-RPC Endpoint : TODO
-Web GRPC: TODO
-LCD Endpoint : TODO
+Chain-ID: native-t1
+App gRPC: 161.35.157.54:9090
+App gRPC-gateway (JSON RPC): localhost:1317
+
+CommetBFT RPC: 161.35.157.54:26657
+CommetBFT p2p: 161.35.157.54:26656
+
 Explorer : TODO
 
 ### Sync info
@@ -17,8 +20,6 @@ Snapshot providers:
 - TODO
 
 `persistent_peers`:
-
--
 
 ### Become validator
 
