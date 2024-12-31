@@ -172,14 +172,14 @@ It monitors the governance module for incoming chain upgrade proposals. If it se
 
 - [Docs](https://github.com/cosmos/cosmos-sdk/tree/main/tools/cosmovisor)
 - See the Cosmos Hub [guide](https://hub.cosmos.network/main/hub-tutorials/join-mainnet#cosmovisor).
-  recommended setting - [systemd service file](./systemd/gonative.service)
+  recommended setting - [systemd cosmovisor service file](./systemd/cosmovisord.service) (or [systemd gonative service file](./systemd/gonatived.service) if you don't use cosmovisor)
 
 Use the following commands to enable systemd service:
 
 ```sh
 sudo systemctl daemon-reload
-sudo systemctl enable gonative
-sudo systemctl start gonative
+sudo systemctl enable cosmovisord  # or gonatived service
+sudo systemctl start cosmovisord
 ```
 
 To check logs you can use this command

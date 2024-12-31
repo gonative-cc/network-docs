@@ -1,14 +1,16 @@
 [Unit]
-Description=gonative Daemon
+Description=Cosmovisor for a GoNative Node
 After=network-online.target
 
 [Service]
 User=validator
-ExecStart=$(which cosmovisor) run start
+ExecStart=ExecStart=cosmovisor run start
 Restart=always
-RestartSec=6
+RestartSec=10
 LimitNOFILE=infinity
 LimitNPROC=infinity
+SyslogIdentifier=NativeNode
+
 Environment="DAEMON_HOME=$HOME/.gonative"
 Environment="DAEMON_NAME=gonative"
 Environment="DAEMON_ALLOW_DOWNLOAD_BINARIES=false"

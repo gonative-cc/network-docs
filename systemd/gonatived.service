@@ -1,0 +1,17 @@
+[Unit]
+Description=GoNative Node
+After=network-online.target
+
+[Service]
+User=validator
+ExecStart=ExecStart=/usr/local/bin/gonative start
+Restart=always
+RestartSec=10
+LimitNOFILE=infinity
+LimitNPROC=infinity
+SyslogIdentifier=NativeNode
+
+TimeoutStopSec=90
+
+[Install]
+WantedBy=multi-user.target
