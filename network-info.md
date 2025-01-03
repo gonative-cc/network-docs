@@ -12,21 +12,29 @@
 
 ### Network
 
-| --            | value               |
-| ------------- | ------------------- |
-| Chain-ID      | native-t1           |
-| App gRPC      | 161.35.157.54:9090  |
-| App JSON RPC  | localhost:1317      |
-| CommetBFT RPC | 161.35.157.54:26657 |
-| CommetBFT p2p | 161.35.157.54:26656 |
-
-Explorer : TODO
+- Chain-ID: `native-t1`
+- Genesis: [genesis-testnet-1.json.gz](./genesis/genesis-testnet-1.json.gz)
+- Explorer : TODO
 
 ### Sync info
 
-- [genesis-testnet-1.json.gz](./genesis/genesis-testnet-1.json.gz)
-- Snapshot providers: TODO
-- `persistent_peers`: TODO
+| provider | State Sync | Snapshot |                                                         Peer |
+| :------- | ---------: | -------: | -----------------------------------------------------------: |
+| Native   |        Yes |       No | 7567880ef17ce8488c55c3256c76809b37659cce@161.35.157.54:26656 |
+| Polkachu |        Yes |      Yes |      [testnets/native](https://polkachu.com/testnets/native) |
+|          |            |          |                                                              |
+
+---
+
+Native RPC:
+
+| --                 | value               |
+| ------------------ | ------------------- |
+| Chain-ID           | native-t1           |
+| App gRPC           | 161.35.157.54:9090  |
+| App JSON RPC (API) | localhost:1317      |
+| CommetBFT RPC      | 161.35.157.54:26657 |
+| CommetBFT p2p      | 161.35.157.54:26656 |
 
 ## Mainnet
 
