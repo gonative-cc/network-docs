@@ -4,7 +4,7 @@ After=network-online.target
 
 [Service]
 User=validator
-ExecStart=ExecStart=/usr/local/bin/gonative start
+ExecStart=/usr/local/bin/gonative start
 Restart=always
 RestartSec=10
 LimitNOFILE=infinity
