@@ -212,3 +212,13 @@ See [Release Compatibility Matrix](https://github.com/gonative-cc/gonative#relea
 **To test if the libwasm is linked correctly, run `gonative version`.**
 
 -->
+
+## Hardware requirements
+
+Min hardware requirements to run a node.
+
+### Testnet
+
+- 4GB RAM
+- 50GB SSD
+- 2 vCPU

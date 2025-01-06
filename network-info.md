@@ -36,14 +36,6 @@ Native RPC:
 | CommetBFT RPC      | 161.35.157.54:26657 |
 | CommetBFT p2p      | 161.35.157.54:26656 |
 
----
-
-Min hardware requirements:
-
-- 4GB RAM
-- 50GB SSD
-- 2 vCPU
-
 ## Mainnet
 
 ### Become a validator
