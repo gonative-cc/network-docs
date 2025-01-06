@@ -14,7 +14,7 @@
 
 - Chain-ID: `native-t1`
 - Genesis: [genesis-testnet-1.json.gz](./genesis/genesis-testnet-1.json.gz)
-- Explorer : TODO
+- Explorer : [NodesGuru](https://testnet.native.explorers.guru/)
 
 ### Sync info
 
@@ -35,6 +35,14 @@ Native RPC:
 | App JSON RPC (API) | localhost:1317      |
 | CommetBFT RPC      | 161.35.157.54:26657 |
 | CommetBFT p2p      | 161.35.157.54:26656 |
+
+---
+
+Min hardware requirements:
+
+- 4GB RAM
+- 50GB SSD
+- 2 vCPU
 
 ## Mainnet
 
