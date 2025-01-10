@@ -14,15 +14,15 @@
 
 - Chain-ID: `native-t1`
 - Genesis: [genesis-testnet-1.json.gz](./genesis/genesis-testnet-1.json.gz)
-- Explorer : [NodesGuru](https://testnet.native.explorers.guru/)
+- Explorer : [NodesGuru](https://testnet.native.explorers.guru/), [STAVR](https://explorer.stavr.tech/Native-Testnet)
 
 ### Sync info
 
-| provider | State Sync | Snapshot |                                                         Peer |
-| :------- | ---------: | -------: | -----------------------------------------------------------: |
-| Native   |        Yes |       No | 7567880ef17ce8488c55c3256c76809b37659cce@161.35.157.54:26656 |
-| Polkachu |        Yes |      Yes |      [testnets/native](https://polkachu.com/testnets/native) |
-|          |            |          |                                                              |
+| provider | State Sync | Snapshot |                                                                             Peer |
+|:---------|-----------:|---------:|---------------------------------------------------------------------------------:|
+| Native   |        Yes |       No |                     7567880ef17ce8488c55c3256c76809b37659cce@161.35.157.54:26656 |
+| Polkachu |        Yes |      Yes |                          [testnets/native](https://polkachu.com/testnets/native) |
+| STAVR    |       soon |      Yes | [stavr/testnet](https://stavr-team.gitbook.io/nodes-guides/testnets/native/sync) |
 
 ---
 
