@@ -18,11 +18,12 @@
 
 ### Sync info
 
-| provider | State Sync | Snapshot |                                                                             Peer |
-|:---------|-----------:|---------:|---------------------------------------------------------------------------------:|
-| Native   |        Yes |       No |                     7567880ef17ce8488c55c3256c76809b37659cce@161.35.157.54:26656 |
-| Polkachu |        Yes |      Yes |                          [testnets/native](https://polkachu.com/testnets/native) |
-| STAVR    |       soon |      Yes | [stavr/testnet](https://stavr-team.gitbook.io/nodes-guides/testnets/native/sync) |
+| provider    | State Sync | Snapshot | Info                                                                                                                  |
+|:------------|-----------:|---------:|:----------------------------------------------------------------------------------------------------------------------|
+| Native      |        Yes |       No | peer: 7567880ef17ce8488c55c3256c76809b37659cce@161.35.157.54:26656                                                          |
+| Polkachu    |        Yes |      Yes | [testnets/native](https://polkachu.com/testnets/native)                                                               |
+| STAVR       |       soon |      Yes | [stavr/testnet](https://stavr-team.gitbook.io/nodes-guides/testnets/native/sync)                                      |
+| lesnik_utsa |        Yes |      Yes | [utsa/testnet](utsa.gitbook.io/services/testnet/native), [guide in RU](https://teletype.in/@lesnik13utsa/Vj7SznlmE6n) |
 
 ---
 
